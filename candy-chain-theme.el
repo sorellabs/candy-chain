@@ -159,8 +159,8 @@ toning down them because they're just not as important."
      ;;
      ;; Flyspell stuff
      ;;
-     (flyspell-duplicate ((t (:background "#382323" :box "#FC951E"))))
-     (flyspell-incorrect ((t (:background "#382323" :box "#E52222"))))
+     (flyspell-duplicate ((t (:background "#382323" :underline "#FC951E" :bold t))))
+     (flyspell-incorrect ((t (:background "#382323" :underline "#E52222" :bold t))))
 
      ;;
      ;; Yasnippet
