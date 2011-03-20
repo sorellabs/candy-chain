@@ -163,6 +163,16 @@ toning down them because they're just not as important."
      (flyspell-incorrect ((t (:background "#382323" :underline "#E52222" :bold t))))
 
      ;;
+     ;; ERC
+     ;;
+     (erc-notice-face ((t (:foreground "#75766A"))))
+     (erc-current-nick-face ((t (:foreground "#FA2573"))))
+     (erc-input-face ((t (:foreground "#ABB4A1"))))
+     (erc-nick-default-face ((t (:foreground "#729FCF"))))
+     (erc-prompt-face ((t (:foreground "#FC951E" :background nil))))
+     (erc-timestamp-face ((t (:foreground "#75766A"))))
+
+     ;;
      ;; Yasnippet
      ;;
      (yas/field-highlight-face ((t (:background "#586045" :box "#ACAE95")))))))
