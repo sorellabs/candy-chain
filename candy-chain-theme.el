@@ -173,6 +173,16 @@ toning down them because they're just not as important."
      (erc-timestamp-face ((t (:foreground "#75766A"))))
 
      ;;
+     ;; ReStructuredText
+     ;;
+     (rst-level-1-face ((t (:foreground "#729FCF" :bold t))))
+     (rst-level-2-face ((t (:inherit 'rst-level-1-face))))
+     (rst-level-3-face ((t (:inherit 'rst-level-2-face))))
+     (rst-level-4-face ((t (:inherit 'rst-level-3-face))))
+     (rst-level-5-face ((t (:inherit 'rst-level-4-face))))
+     (rst-level-6-face ((t (:inherit 'rst-level-5-face))))
+
+     ;;
      ;; Yasnippet
      ;;
      (yas/field-highlight-face ((t (:background "#586045" :box "#ACAE95")))))))
