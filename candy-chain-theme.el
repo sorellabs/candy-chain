@@ -185,6 +185,11 @@ toning down them because they're just not as important."
      (rst-level-6-face ((t (:inherit 'rst-level-5-face))))
 
      ;;
+     ;; ORG Mode
+     ;;
+     (org-hide ((t (:foreground "#303636"))))
+
+     ;;
      ;; Yasnippet
      ;;
      (yas/field-highlight-face ((t (:background "#586045" :box "#ACAE95")))))))
