@@ -177,7 +177,7 @@ toning down them because they're just not as important."
      ;;
      ;; ReStructuredText
      ;;
-     (rst-level-1-face ((t (:foreground "#729FCF" :bold t))))
+     (rst-level-1-face ((t (:foreground "#729FCF" :background nil :bold t))))
      (rst-level-2-face ((t (:inherit 'rst-level-1-face))))
      (rst-level-3-face ((t (:inherit 'rst-level-2-face))))
      (rst-level-4-face ((t (:inherit 'rst-level-3-face))))
