@@ -126,6 +126,7 @@ toning down them because they're just not as important."
      ;; JS2 stuff
      ;;
      (js2-function-param-face ((t (:foreground "#729FCF"))))
+     (js3-function-param-face ((t (:inherit 'js2-function-param-face))))
 
      ;;
      ;; Diff
