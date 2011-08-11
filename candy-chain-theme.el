@@ -1,25 +1,24 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; candy-chain-theme.el --- colourful colour theme for Emacsen
-;;
+
 ;; Copyright (c) 2011 Quildreen Motta
-;;
+
 ;; Version 0.4.0
 ;; Keywords: candy chain colour theme
 ;; Author:   Quildreen Motta <quildreen@gmail.com>
 ;; URL:      http://github.com/killdream/candy-chain
-;;
+
 ;; This file is not part of GNU Emacs.
-;;
+
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of GNU General Public Licence as published by the
 ;; Free Software Foundation; either version 2, or (at your option) any
 ;; later version.
-;;
+
 ;; This program is distributed in the hope that it will be useful, but
 ;; WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 ;; General Public Licence for more details.
-;;
+
 ;; You should have received a copy of the GNU General Public Licence
 ;; along with this program; if not, write to the Free Software
 ;; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -29,24 +28,24 @@
 ;; See README.md (or http://github.com/killdream/candy-chain#readme)
 
 ;;; Installation
-;;
+
 ;; You'll need the `color-theme' package, get it from here:
 ;; http://www.nongnu.org/color-theme
-;;
+
 ;; In your shell:
-;;
+
 ;;     $ cd ~/.emacs.d/vendor
 ;;     $ git clone git://github.com/killdream/candy-chain.git
-;;
+
 ;; In your emacs config:
-;;
+
 ;;     (add-to-list 'load-path "/path/to/candy-chain")
 ;;     (require 'candy-chain)
 ;;     (color-theme-initialize)
 ;;     (color-theme-candy-chain)
 
 ;;; TODO:
-;;
+
 ;; - define colours for GUI elements.
 ;; - finish defining colours for customize-group stuff.
 ;; - everything else?
@@ -194,6 +193,9 @@ toning down them because they're just not as important."
      ;;
      (yas/field-highlight-face ((t (:background "#586045" :box "#ACAE95")))))))
 
+
 (add-to-list 'color-themes '(color-theme-candy-chain 
                              "Candy Chain"
                              "Quildreen Motta"))
+
+(provide 'candy-chain)
