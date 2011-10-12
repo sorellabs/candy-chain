@@ -74,125 +74,297 @@ toning down them because they're just not as important."
      ;;
      ;; Basic stuff
      ;;
-     (default ((t (:background "#22252a" :foreground "#eeeeee"))))
-     (font-lock-builtin-face ((t (:foreground "#FA2573"))))
-     (font-lock-comment-delimiter-face ((t (:foreground "#75766A"))))
-     (font-lock-comment-face ((t (:foreground "#75766A"))))
-     (font-lock-constant-face ((t (:foreground "#FA2573"))))
-     (font-lock-doc-face ((t (:foreground "#ACAE95"))))
-     (font-lock-function-name-face ((t (:foreground "#67D9F0"))))
-     (font-lock-keyword-face ((t (:foreground "#C48DFF"))))
-     (font-lock-negation-char-face ((t (nil))))
-     (font-lock-preprocessor-face ((t (:foreground "#75766A"))))
-     (font-lock-regexp-grouping-backslash ((t (:bold t :weight bold))))
-     (font-lock-regexp-grouping-construct ((t (:bold t :weight bold))))
-     (font-lock-string-face ((t (:foreground "#A6E32D"))))
-     (font-lock-type-face ((t (:foreground "#FC951E"))))
-     (font-lock-variable-name-face ((t (:foreground "#729FCF"))))
-     (font-lock-warning-face ((t (:bold t :foreground "#E52222" :weight bold))))
-     (fringe ((t (:background "#555753"))))
-     (show-paren-match ((t (:background "#67D9F0" :foreground "#555753"))))
-     (show-paren-mismatch ((t (:background "#FA2573"))))
-     (minibuffer-prompt ((t (:foreground "#FC951E"))))
-     (highlight ((t (:background "#303636"))))
-     (region ((t (:background "#586045"))))
-     (trailing-whitespace ((t (:bold t :background "#382323"
-                                       :foreground "#624935" :weight bold))))
+     (default
+       ((t (:background "#22252a"
+            :foreground "#eeeeee"))))
+
+     (font-lock-builtin-face
+      ((t (:foreground "#FA2573"))))
+
+     (font-lock-comment-delimiter-face
+      ((t (:foreground "#75766A"))))
+
+     (font-lock-comment-face
+      ((t (:foreground "#75766A"))))
+
+     (font-lock-constant-face
+      ((t (:foreground "#FA2573"))))
+
+     (font-lock-doc-face
+      ((t (:foreground "#ACAE95"))))
+
+     (font-lock-function-name-face
+      ((t (:foreground "#67D9F0"))))
+
+     (font-lock-keyword-face
+      ((t (:foreground "#C48DFF"))))
+
+     (font-lock-negation-char-face
+      ((t (nil))))
+
+     (font-lock-preprocessor-face
+      ((t (:foreground "#75766A"))))
+
+     (font-lock-regexp-grouping-backslash
+      ((t (:bold   t
+           :weight bold))))
+
+     (font-lock-regexp-grouping-construct
+      ((t (:bold   t
+           :weight bold))))
+
+     (font-lock-string-face
+      ((t (:foreground "#A6E32D"))))
+
+     (font-lock-type-face
+      ((t (:foreground "#FC951E"))))
+
+     (font-lock-variable-name-face
+      ((t (:foreground "#729FCF"))))
+
+     (font-lock-warning-face
+      ((t (:bold       t
+           :foreground "#E52222"
+           :weight     bold))))
+
+     (fringe
+      ((t (:background "#555753"))))
+
+     (header-line
+      ((t (:background "#303636"           
+           :foreground "#eee"))))
+
+     (mode-line
+      ((t (:inherit    'fringe
+           :foreground "#eee"
+           :box        "#abb4a1"))))
+
+     (mode-line-inactive
+      ((t (:inherit    'mode-line
+           :box        nil))))
+
+     (mode-line-highlight
+      ((t (:box        "#abb4a1"
+           :background "#777777"))))
+
+     (mode-line-buffer-id
+      ((t (:foreground "#99E0AA"))))
+
+     (show-paren-match
+      ((t (:background "#67D9F0"
+           :foreground "#555753"))))
+
+     (show-paren-mismatch
+      ((t (:background "#FA2573"))))
+
+     (minibuffer-prompt
+      ((t (:foreground "#FC951E"))))
+
+     (highlight
+      ((t (:background "#303636"))))
+
+     (hl-line
+      ((t (:inherit 'highlight))))
+
+     (region
+      ((t (:background "#586045"))))
+
+     (trailing-whitespace
+      ((t (:bold       t
+           :background "#382323"
+           :foreground "#624935"
+           :weight     bold))))
 
      ;;
      ;; ISearch
      ;;
-     (isearch ((t (:background "#586045" :box "#ACAE95"))))
-     (isearch-fail ((t (:background "#382323" :foreground "#E52222"))))
+     (isearch
+      ((t (:background "#586045"
+           :box "#ACAE95"))))
+
+     (isearch-fail
+      ((t (:background "#382323"
+           :foreground "#E52222"))))
 
      ;;
      ;; Twittering mode
      ;;
-     (twittering-uri-face ((t (:foreground "#729FCF"))))
-     (twittering-username-face ((t (:foreground "#FC951E" :bold t))))
+     (twittering-uri-face
+      ((t (:foreground "#729FCF"))))
+
+     (twittering-username-face
+      ((t (:foreground "#FC951E"
+           :bold t))))
 
      ;;
      ;; Usual UI stuffs
      ;;
-     (widget-field ((t (:background "#555753"))))
-     (custom-group-tag-face ((t (:bold t      :foreground "#67D9F0"
-                                 :weight bold :height 1.2))))
-     (custom-variable-tag-face ((t (:bold t :foreground "#729FCF"
-                                    :weight bold))))
-     (custom-state-face ((t (:foreground "#A6E32Dr"))))
-     (link ((t (:foreground "#729FCF" :underline nil))))
+     (widget-field
+      ((t (:background "#555753"))))
+
+     (custom-group-tag-face
+      ((t (:bold       t
+           :foreground "#67D9F0"
+           :weight      bold
+           :height      1.2))))
+
+     (custom-variable-tag-face
+      ((t (:bold t
+           :foreground "#729FCF"
+           :weight bold))))
+
+     (custom-state-face
+      ((t (:foreground "#A6E32Dr"))))
+
+     (link
+      ((t (:foreground "#729FCF"
+           :underline nil))))
 
      ;;
      ;; JS2 stuff
      ;;
-     (js2-function-param-face ((t (:foreground "#729FCF"))))
-     (js3-function-param-face ((t (:inherit 'js2-function-param-face))))
+     (js2-function-param-face
+      ((t (:foreground "#729FCF"))))
+
+     (js3-function-param-face
+      ((t (:inherit 'js2-function-param-face))))
 
      ;;
      ;; Diff
      ;;
-     (diff-added ((t (:foreground "#A6E32D"))))
-     (diff-changed ((t (:foreground "#67D9F0"))))
-     (diff-removed ((t (:foreground "#FA2573"))))
-     (diff-header ((t (:background "#555753"))))
-     (diff-file-header ((t (:bold t :background "#555753" :weight bold))))
-     (diff-context ((t (:foreground "#EEEEEE"))))
+     (diff-added
+      ((t (:foreground "#A6E32D"))))
+
+     (diff-changed
+      ((t (:foreground "#67D9F0"))))
+
+     (diff-removed
+      ((t (:foreground "#FA2573"))))
+
+     (diff-header
+      ((t (:background "#555753"))))
+
+     (diff-file-header
+      ((t (:bold t
+           :background "#555753"
+           :weight bold))))
+
+     (diff-context
+      ((t (:foreground "#EEEEEE"))))
 
 
      ;;
      ;; Whitespace mode
      ;;
-     (whitespace-indentation ((t (:background "#555753"
-                                  :foreground "#82996A"))))
-     (whitespace-line ((t (:background "#5C5861" :foreground "#7A6D89"))))
-     (whitespace-newline ((t (:foreground "#303636" :weight normal))))
-     (whitespace-space ((t (:background "#303636" :foreground "#586045"))))
-     (whitespace-tab ((t (:background "#303636" :foreground "#82996A"))))
-     (whitespace-space-after-tab ((t (:background "#303636"
-                                      :foreground "#82996A"))))
-     (whitespace-space-before-tab ((t (:background "#382323"
-                                       :foreground "#82996A"))))
-     (whitespace-trailing ((t (:inherit 'trailing-whitespace))))
-     (whitespace-empty ((t (:background "#382323" :foreground "#624935"))))
-     (whitespace-hspace ((t (:background "#382323" :foreground "#82996A"))))
+     (whitespace-indentation
+      ((t (:background "#555753"
+           :foreground "#82996A"))))
+
+     (whitespace-line
+      ((t (:background "#5C5861"
+           :foreground "#7A6D89"))))
+
+     (whitespace-newline
+      ((t (:foreground "#303636"
+           :weight normal))))
+
+     (whitespace-space
+      ((t (:background "#303636"
+           :foreground "#586045"))))
+
+     (whitespace-tab
+      ((t (:background "#303636"
+           :foreground "#82996A"))))
+
+     (whitespace-space-after-tab
+      ((t (:background "#303636"
+           :foreground "#82996A"))))
+
+     (whitespace-space-before-tab
+      ((t (:background "#382323"
+           :foreground "#82996A"))))
+
+     (whitespace-trailing
+      ((t (:inherit 'trailing-whitespace))))
+
+     (whitespace-empty
+      ((t (:background "#382323"
+           :foreground "#624935"))))
+
+     (whitespace-hspace
+      ((t (:background "#382323"
+           :foreground "#82996A"))))
 
      ;;
      ;; Flyspell stuff
      ;;
-     (flyspell-duplicate ((t (:background "#382323" :underline "#FC951E"
-                              :bold t))))
-     (flyspell-incorrect ((t (:background "#382323" :underline "#E52222"
-                              :bold t))))
+     (flyspell-duplicate
+      ((t (:background "#382323"
+           :underline  "#FC951E"
+           :bold        t))))
+
+     (flyspell-incorrect
+      ((t (:background "#382323"
+           :underline "#E52222"
+           :bold t))))
 
      ;;
      ;; ERC
      ;;
-     (erc-notice-face ((t (:foreground "#75766A"))))
-     (erc-current-nick-face ((t (:foreground "#FA2573"))))
-     (erc-input-face ((t (:foreground "#ABB4A1"))))
-     (erc-nick-default-face ((t (:foreground "#729FCF"))))
-     (erc-prompt-face ((t (:foreground "#FC951E" :background nil))))
-     (erc-timestamp-face ((t (:foreground "#75766A"))))
+     (erc-notice-face
+      ((t (:foreground "#75766A"))))
+
+     (erc-current-nick-face
+      ((t (:foreground "#FA2573"))))
+
+     (erc-input-face
+      ((t (:foreground "#ABB4A1"))))
+
+     (erc-nick-default-face
+      ((t (:foreground "#729FCF"))))
+
+     (erc-prompt-face
+      ((t (:foreground "#FC951E"
+           :background nil))))
+
+     (erc-timestamp-face
+      ((t (:foreground "#75766A"))))
 
      ;;
      ;; ReStructuredText
      ;;
-     (rst-level-1-face ((t (:foreground "#729FCF" :background nil :bold t))))
-     (rst-level-2-face ((t (:inherit 'rst-level-1-face))))
-     (rst-level-3-face ((t (:inherit 'rst-level-2-face))))
-     (rst-level-4-face ((t (:inherit 'rst-level-3-face))))
-     (rst-level-5-face ((t (:inherit 'rst-level-4-face))))
-     (rst-level-6-face ((t (:inherit 'rst-level-5-face))))
+     (rst-level-1-face
+      ((t (:foreground "#729FCF"
+           :background nil
+           :bold t))))
+
+     (rst-level-2-face
+      ((t (:inherit 'rst-level-1-face))))
+
+     (rst-level-3-face
+      ((t (:inherit 'rst-level-2-face))))
+
+     (rst-level-4-face
+      ((t (:inherit 'rst-level-3-face))))
+
+     (rst-level-5-face
+      ((t (:inherit 'rst-level-4-face))))
+
+     (rst-level-6-face
+      ((t (:inherit 'rst-level-5-face))))
 
      ;;
      ;; ORG Mode
      ;;
-     (org-hide ((t (:foreground "#303636"))))
+     (org-hide
+      ((t (:foreground "#303636"))))
 
      ;;
      ;; Yasnippet
      ;;
-     (yas/field-highlight-face ((t (:background "#586045" :box "#ACAE95")))))))
+     (yas/field-highlight-face
+      ((t (:background "#586045"
+           :box "#ACAE95")))))))
 
 
 (add-to-list 'color-themes '(color-theme-candy-chain 
