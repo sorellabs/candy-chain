@@ -354,11 +354,40 @@ toning down them because they're just not as important."
       ((t (:inherit 'rst-level-5-face))))
 
      ;;
+     ;; Outline
+     ;;
+     (outline-1
+      ((t (:foreground "#437BA5"))))
+     (outline-2
+      ((t (:foreground "#729bb6"))))
+     (outline-3
+      ((t (:foreground "#a2bcc8"))))
+     (outline-4
+      ((t (:foreground "#d1dcd9"))))
+     (outline-5
+      ((t (:foreground "#437ba5"))))
+     (outline-6
+      ((t (:foreground "#729bb6"))))
+     (outline-7
+      ((t (:foreground "#a2bcc8"))))
+     (outline-8
+      ((t (:foreground "#d1dcd9"))))
+
+     ;;
      ;; ORG Mode
      ;;
      (org-hide
       ((t (:foreground "#303636"))))
+     (org-special-keyword
+      ((t (:inherit 'font-lock-type-face))))
 
+     ;;
+     ;; Perspective mode
+     ;;
+     (persp-selected-face
+      ((t (:foreground "#eeeeee"
+           :background "#382323"
+           :box        "#382323"))))
      ;;
      ;; Yasnippet
      ;;
