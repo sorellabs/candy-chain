@@ -100,10 +100,10 @@ toning down them because they're just not as important."
       ((t (:foreground "#C48DFF"))))
 
      (font-lock-negation-char-face
-      ((t (nil))))
+      ((t (:foreground "#E52222"))))
 
      (font-lock-preprocessor-face
-      ((t (:foreground "#75766A"))))
+      ((t (:foreground "#4f4f4f"))))
 
      (font-lock-regexp-grouping-backslash
       ((t (:bold   t
@@ -400,4 +400,4 @@ toning down them because they're just not as important."
                              "Candy Chain"
                              "Quildreen Motta"))
 
-(provide 'candy-chain)
+(provide 'color-theme-candy-chain)
